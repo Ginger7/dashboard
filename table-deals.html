@@ -1,0 +1,1281 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta content="telephone=no" name="format-detection">
+        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <meta name="HandheldFriendly" content="true">
+
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#0458fe">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- end Google Fonts -->
+
+        <link href="https://cdn.jsdelivr.net" rel="preconnect">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="static/css/separate-css/jquery.flexdatalist.min.css">
+        <!--[if IE 8 ]>
+    <link href="static/css/main_ie8.min.css" rel="stylesheet" type="text/css"><![endif]-->
+        <!--[if IE 9 ]>
+    <link href="static/css/main_ie9.min.css" rel="stylesheet" type="text/css"><![endif]-->
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/main.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+
+        <!-- JQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <!-- end JQuery CDN -->
+
+        <script src="static/js/separate-js/jquery.flexdatalist.min.js"></script>
+        <!-- Vue.js -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+        <!-- end Vue.js -->
+
+        <!-- Chart.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.js"></script> -->
+        <!-- end Chart.js -->
+
+        <script>
+            (function (H) {
+                H.className = H.className.replace(/\bno-js\b/, 'js')
+            })(document.documentElement)
+        </script>
+        <!--[if lt IE 9 ]>
+    <script src="static/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script>
+    <meta content="no" http-equiv="imagetoolbar"><![endif]-->
+    </head>
+
+    <body>
+
+
+        <div class="page">
+
+
+            <!-- Include your modules here -->
+
+            <header class="page_hdr header container-fluid">
+                <div class="page-hdr_grid">
+                    <div class="hdr-menu">
+                        <div class="burder-logo">
+                            <div class="menu-wrapper">
+                                <a class="m-href" href="#">
+                                    <img src="static/img/general/h-logo.svg" alt="" width="254">
+                                </a>
+                            </div>
+                            <div class="header-burger">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="header-menu">
+                            <nav>
+                                <ul class="header-list">
+                                    <li>
+                                        <a href="/">Венчурные инвестиции</a>
+                                    </li>
+                                    <li>
+                                        <a href="/exits/">Выходы</a>
+                                    </li>
+                                    <li>
+                                        <a href="/startups/">Таблица сделок</a>
+                                    </li>
+                                    <li>
+                                        <a href="/investments/">Направления инвестиций</a>
+                                    </li>
+                                    <li>
+                                        <a href="/startups/">ESG</a>
+                                    </li>
+                                    <li>
+                                        <a href="/startups/">Аналитические исследования</a>
+                                    </li>
+                                    <li>
+                                        <a href="/about/">О проекте</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="burger-logo">
+                                <a href="#">
+                                    <img src="static/img/general/aim-white.svg" alt="" width="122">
+                                </a>
+                                <a href="#">
+                                    <img src="static/img/general/dsight-white.svg" alt="" width="135">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hdr-search" id="hdr-search">
+                        <form class="input-group">
+                            <input type='text' class="header-search form-control" placeholder='Найти компанию или инвестора' list='search' name='search' aria-describedby="search-btn">
+                            <button id="search-btn" type="submit"></button>
+                        </form>
+                    </div>
+                    <div class="hdr-lang">
+                        <span class="hdr-lang__item active">RU</span>
+                        <a href="#" class="hdr-lang__item">EN</a>
+                    </div>
+
+                    <div class="hdr-logos">
+                        <div class="logo-wrapper">
+                            <img src="static/img/general/aim.svg" alt="" width="122">
+                        </div>
+                        <div class="logo-wrapper">
+                            <img src="static/img/general/dsight-white.svg" alt="" width="135">
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    $(document).ready(function(){
+                        $('.header-burger').click(function(event){
+                            $('.header-burger, .header-menu').toggleClass('active');
+                            $('body').toggleClass('lock');
+                        });
+                    });
+                    $(function () {
+                        /* пример файла выдачи  http://projects.sergiodinislopes.pt/flexdatalist/countries.json?relatives%5Bcountry_toggle_multiple_values%5D=166%2C149&selected=&original=&keyword=%3Bkl&contain=false */
+                        $('.header-search').flexdatalist({
+                            limitOfValues: 10,
+                            minLength: 1,
+                            searchIn: 'name',
+                            valueProperty: '*',
+                            selectionRequired: true,
+                            //url: "/ajax/header-search/",
+                            url: "countries.json",
+                            searchByWord: true,
+                            noResultsText: '<div class="flexdatalist-noresults">Ничего не найдено</div>',
+                        })
+                    })
+                </script>
+            </header>
+
+            <main class="another_grid container-fluid">
+                <div class="main-grid">
+                    <div class="left-menu">
+
+                        <div class="left-menu">
+                            <div class="menu-wrap">
+                                <ul class="menu">
+                                    <li class="menu-item">
+                                        <a class="menu-item-href" href="/">
+                                            <svg width="32" height="31" viewBox="0 0 32 31" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M31 11.15V6C31 3.23858 28.7614 1 26 1H6C3.23858 1 1 3.23858 1 6V11.15M31 11.15V25C31 27.7614 28.7614 30 26 30H11M31 11.15H11M1 11.15V25C1 27.7614 3.23858 30 6 30H11M1 11.15H11M11 11.15V30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </a> <span>Венчурные инвестиции</span>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-item-href" href="/exits/">
+                                            <svg width="32" height="31" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 5L23 5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M1 13L16 13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M9 21L24 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M21 1.5L24.5 5L21 8.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M13 9.5L16.5 13L13 16.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M22 17.5L25.5 21L22 24.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </a> <span>Выходы</span>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-item-href" href="/startups/">
+                                            <svg width="32" height="31" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M31 1.31384H11M1 1.31384H4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M31 11.1328H11M1 11.1328H4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M31 20.9517H11M1 20.9517H4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </a> <span>Таблица сделок</span>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-item-href" href="/investments/">
+                                            <svg width="32" height="31" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="1.49121" y="1.72607" width="16.7887" height="16.7887" rx="5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></rect>
+                                                <path d="M33.1865 21.7261H26.4912C23.7298 21.7261 21.4912 23.9647 21.4912 26.7261V33.3682" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <rect x="8.49121" y="8.72607" width="24.7887" height="24.7887" rx="5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></rect>
+                                            </svg>
+                                        </a> <span>направления инвестиций</span>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-item-href active" href="/startups/">
+                                    ESG
+                                </a>
+                                        <span>ESG</span>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-item-href" href="/startups/">
+                                            <svg width="39" height="26" viewBox="0 0 39 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.50958 22.8053L15.0555 11.2594L21.5814 17.7853L36.1393 3.22748" stroke="#6D798F" stroke-width="2" />
+                                                <circle cx="3.58216" cy="22.4645" r="2.40271" fill="#F2F3F6" stroke="#6D798F" stroke-width="2" />
+                                                <circle cx="15.0973" cy="11.2296" r="2.40271" fill="#F2F3F6" stroke="#6D798F" stroke-width="2" />
+                                                <circle cx="21.9027" cy="17.4767" r="2.40271" fill="#F2F3F6" stroke="#6D798F" stroke-width="2" />
+                                                <circle cx="35.5012" cy="3.76856" r="2.40271" fill="#F2F3F6" stroke="#6D798F" stroke-width="2" />
+                                            </svg>
+                                        </a>
+                                        <span>АНАЛИТИКА</span>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-item-href" href="/about/" style="height: 69px; padding-top: 28px; width: 72px;">?</a>
+                                        <span>О проекте</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="main-grid-right">
+                        <div class="main-header mb-2">
+                            <div class="title-deals mb-3 pr-4">Таблица сделок</div>
+                            <div class="main-header-amount mb-3">
+                                <div class="main-header-amount__item"><span>354</span> сделки</div>
+                                <div class="main-header-amount__item"><span>$50,5</span> млн</div>
+                            </div>
+                        </div>
+
+                        <div class="deals-button-row">
+                            <div class="button-wrapper">
+                                <div class="buttons">
+                                    <select class="selectpicker graph-select rounds" id="rounds" name="rounds" title="Раунд" multiple data-selected-text-format="static" data-none-selected-text="Не выбрано" data-placement="bottom-center">
+                                        <option value="Pre-seed">Pre-seed</option>
+                                        <option value="Seed">Seed</option>
+                                        <option value="А">А</option>
+                                        <option value="В">В</option>
+                                        <option value="С">С</option>
+                                    </select>
+                                    <select class="selectpicker graph-select stages" name="stages" title="Стадия стартапа" multiple data-selected-text-format="static" data-none-selected-text="Не выбрано">
+                                        <option value="Посевная">Посевная</option>
+                                        <option value="Ранний рост">Ранний рост</option>
+                                        <option value="Расширение">Расширение</option>
+                                    </select>
+                                    <select class="selectpicker graph-select spheres" name="spheres" title="Рыночная ниша" multiple data-selected-text-format="static" data-none-selected-text="Не выбрано">
+                                        <option value="Advertising & Marketing">Advertising & Marketing</option>
+                                        <option value="AgroTech">AgroTech</option>
+                                        <option value="Business Software">Business Software</option>
+                                        <option value="CleanTech">CleanTech</option>
+                                        <option value="Consumer Goods & Services">Consumer Goods & Services</option>
+                                        <option value="Cybersecurity">Cybersecurity</option>
+                                        <option value="E-commerce">E-commerce</option>
+                                        <option value="EdTech">EdTech</option>
+                                        <option value="Entertainment">Entertainment</option>
+                                        <option value="FashionTech">FashionTech</option>
+                                        <option value="FinTech">FinTech</option>
+                                        <option value="FoodTech">FoodTech</option>
+                                        <option value="Gaming">Gaming</option>
+                                        <option value="Healthcare">Healthcare</option>
+                                        <option value="HRTech">HRTech</option>
+                                        <option value="IndustrialTech">IndustrialTech</option>
+                                        <option value="InsuranceTech">InsuranceTech</option>
+                                        <option value="LegalTech">LegalTech</option>
+                                        <option value="PropTech">PropTech</option>
+                                        <option value="RetailTech">RetailTech</option>
+                                        <option value="SafetyTech">SafetyTech</option>
+                                        <option value="SpaceTech">SpaceTech</option>
+                                        <option value="SportTech">SportTech</option>
+                                        <option value="Telecom">Telecom</option>
+                                        <option value="Transport & Logistics">Transport & Logistics</option>
+                                        <option value="Travel">Travel</option>
+                                        <option value="Мedia & Communication">Мedia & Communication</option>
+                                    </select>
+                                    <select class="selectpicker graph-select technologies" name="technologies" title="Технологии" multiple data-selected-text-format="static" data-none-selected-text="Не выбрано">
+                                        <option value="3D моделирование">3D моделирование</option>
+                                        <option value="AR/VR">AR/VR</option>
+                                        <option value="BigData">BigData</option>
+                                        <option value="Аддитивные технологии">Аддитивные технологии</option>
+                                        <option value="Беспилотники">Беспилотники</option>
+                                        <option value="Биометрия">Биометрия</option>
+                                        <option value="Биотехнологии">Биотехнологии</option>
+                                        <option value="Блокчейн">Блокчейн</option>
+                                        <option value="Зеленые технологии">Зеленые технологии</option>
+                                        <option value="Интернет вещей">Интернет вещей</option>
+                                        <option value="Искусственный интеллект и машинное обучение">Искусственный интеллект и машинное обучение</option>
+                                        <option value="Компьютерное зрение">Компьютерное зрение</option>
+                                        <option value="Новые и портативные источники энергии">Новые и портативные источники энергии</option>
+                                        <option value="Новые материалы">Новые материалы</option>
+                                        <option value="Робототехника">Робототехника</option>
+                                    </select>
+                                    <select class="selectpicker graph-select funds" name="funds" title="Тип инвестора" multiple data-selected-text-format="static" data-none-selected-text="Не выбрано">
+                                        <option value="Частные фонды">Частные фонды</option>
+                                        <option value="Государственные фонды">Государственные фонды</option>
+                                        <option value="Корпоративные фонды">Корпоративные фонды</option>
+                                        <option value="Корпоративные инвесторы">Корпоративные инвесторы</option>
+                                        <option value="Бизнес-ангелы">Бизнес-ангелы</option>
+                                        <option value="Акселераторы">Акселераторы</option>
+                                        <option value="Иностранные инвесторы">Иностранные инвесторы</option>
+                                    </select>
+                                    <select class="selectpicker graph-select users" name="users" title="Бизнес-модель" multiple data-selected-text-format="static" data-none-selected-text="Не выбрано">
+                                        <option value="B2B">B2B</option>
+                                        <option value="B2C">B2C</option>
+                                        <option value="B2B2C">B2B2C</option>
+                                        <option value="B2G">B2G</option>
+                                        <option value="P2P">P2P</option>
+                                    </select>
+                                    <div class="graph-button date-btn">
+                                        <span class="date-btn__title">дата сделки</span>
+                                        <div class="date">
+                                            <p class="date__title">Задайте диапазон (месяц и&nbsp;год):</p>
+                                            <div class="date-item">
+                                                <span>От</span>
+                                                <select class="selectpicker select-day day-begin" name="day-begin" data-none-selected-text="Не выбрано">
+                                                    <option value=""></option>
+                                                    <option value="01">01</option>
+                                                    <option value="02">02</option>
+                                                    <option value="03">03</option>
+                                                    <option value="04">04</option>
+                                                    <option value="05">05</option>
+                                                    <option value="06">06</option>
+                                                    <option value="07">07</option>
+                                                    <option value="08">08</option>
+                                                    <option value="09">09</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                                <select class="selectpicker select-year year-begin" name="year-begin" data-none-selected-text="Не выбрано">
+                                                    <option value=""></option>
+                                                    <option value="2017">2017</option>
+                                                    <option value="2018">2018</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                </select>
+                                            </div>
+                                            <div class="date-item">
+                                                <span>До</span>
+                                                <select class="selectpicker select-day day-end" name="day-end" data-none-selected-text="Не выбрано">
+                                                    <option value=""></option>
+                                                    <option value="01">01</option>
+                                                    <option value="02">02</option>
+                                                    <option value="03">03</option>
+                                                    <option value="04">04</option>
+                                                    <option value="05">05</option>
+                                                    <option value="06">06</option>
+                                                    <option value="07">07</option>
+                                                    <option value="08">08</option>
+                                                    <option value="09">09</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                                <select class="selectpicker select-year year-end" name="year-end" data-none-selected-text="Не выбрано">
+                                                    <option value=""></option>
+                                                    <option value="2017">2017</option>
+                                                    <option value="2018">2018</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons group-btn mr-xl-0 ml-xl-auto">
+                                    <a href="/?r=site%2Fstartups&page=1&exits=0" class="deal-btn small-letters active" name="0">Сделки</a>
+                                    <a href="/?r=site%2Fstartups&page=1&exits=1" class="deal-btn small-letters " name="1">Выходы</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-container" id="catalog-app">
+
+                            <!-- Строка активных фильтров -->
+                            <div class="deals_active-filters_row form-row">
+                                <div class="col-auto my-1" v-for="activeFilter in filtersRow" v-cloak>
+                                    <button type="button" class="btn btn-sm btn-secondary" @click="removeFilter(activeFilter)">
+                                        [[activeFilter.val]]<i class="catalog_active-filters_remove ml-3"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="cat_layout">
+                                <div class="buton">
+                                    <button class="filter-btn"><i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="add-columns">
+                                    <div class="a-c-body">
+                                        <div class="item-column">
+                                            <input type="checkbox" name="checkbox" id="description" checked v-model="rows.description">
+                                            <label for="description">Описание</label>
+                                        </div>
+                                        <div class="item-column">
+                                            <input type="checkbox" name="checkbox" id="site" v-model="rows.startup_stage">
+                                            <label for="site">Стадия стартапа</label>
+                                        </div>
+                                        <div class="item-column">
+                                            <input type="checkbox" name="checkbox" id="direction" v-model="rows.market_niche">
+                                            <label for="direction">Рыночная ниша</label>
+                                        </div>
+                                        <div class="item-column">
+                                            <input type="checkbox" name="checkbox" id="startup" v-model="rows.technology">
+                                            <label for="startup">Технологии</label>
+                                        </div>
+                                        <div class="item-column">
+                                            <input type="checkbox" name="checkbox" id="partition" checked v-model="rows.date">
+                                            <label for="partition">Дата сделки</label>
+                                        </div>
+                                        <div class="item-column">
+                                            <input type="checkbox" name="checkbox" id="format" checked v-model="rows.investment_size">
+                                            <label for="format">Объем инвестиций</label>
+                                        </div>
+                                        <div class="item-column">
+                                            <input type="checkbox" name="checkbox" id="operator" checked v-model="rows.round">
+                                            <label for="operator">Раунд</label>
+                                        </div>
+                                        <div class="item-column">
+                                            <input type="checkbox" name="checkbox" id="address" checked v-model="rows.investor">
+                                            <label for="address">Инвестор</label>
+                                        </div>
+                                        <div class="item-column">
+                                            <input type="checkbox" name="checkbox" id="typeinv" v-model="rows.typeinv">
+                                            <label for="typeinv">Тип инвестора</label>
+                                        </div>
+                                        <div class="item-column">
+                                            <input type="checkbox" name="checkbox" id="customers" v-model="rows.customers">
+                                            <label for="customers">Пользователи продукта</label>
+                                        </div>
+                                        <div class="item-column">
+                                            <input type="checkbox" name="checkbox" id="siteofcompany" v-model="rows.siteofcompany">
+                                            <label for="siteofcompany">Сайт компании</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cat_main" id="doublescroll">
+                                    <div class="catalog-list">
+                                        <div class="catalog-title cat-title-deals">
+                                            <div data-table-col="title">Компания</div>
+                                            <div data-table-col="description" v-if="this.rows.description">Описание</div>
+                                            <div class="sort active" v-bind:class="[this.sortArrow == 'up' ? 'up' : 'down']" data-table-col="date" v-if="this.rows.date">Дата</div>
+                                            <div class="sort active" v-bind:class="[this.sortArrow == 'up' ? 'up' : 'down']" data-table-col="investment_size" v-if="this.rows.investment_size">Объем
+                                                <br>инвестиций
+                                            </div>
+                                            <div data-table-col="round" v-if="this.rows.round">Раунд</div>
+                                            <div data-table-col="investor" v-if="this.rows.investor">Инвестор</div>
+                                            <div data-table-col="startup_stage" v-if="this.rows.startup_stage">Стадия
+                                                <br>стартапа</div>
+                                            <div data-table-col="market_niche" v-if="this.rows.market_niche">Рыночная ниша</div>
+                                            <div data-table-col="technology" v-if="this.rows.technology">Технологии</div>
+                                            <div data-table-col="typeinv" v-if="this.rows.typeinv">Тип инвестора</div>
+                                            <div data-table-col="customers" v-if="this.rows.customers">Пользователи
+                                                <br>продукта</div>
+                                            <div data-table-col="siteofcompany" v-if="this.rows.siteofcompany">Сайт компании</div>
+                                        </div>
+                                        <template v-if="cat_items_sorted.length">
+                                            <div is="cat-item" :itemdata="item" v-for="(item, idx) in cat_items_sorted" :key="item.id"></div>
+                                        </template>
+                                        <template v-else>
+                                            <p class="text-muted h5 my-6">Ничего не найдено</p>
+                                        </template>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cat-pagination">
+                                <div class="prev">
+                                    <a href="#">Предыдущая</a>
+                                </div>
+                                <div class="pages">
+                                    <a href="#" class="active">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#" class="no-border">...</a>
+                                    <a href="#">5</a>
+                                </div>
+                                <div class="next">
+                                    <a href="#">Следующая</a>
+                                </div>
+                            </div>
+
+                            <div class="loading-spinner" v-if="isLoading">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="sr-only">Загрузка...</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <style>
+                            @media screen and (min-width: 768px) {
+                                .catalog-list [data-table-col="title"] {
+                                    flex: 0 0 24%;
+                                }
+        
+                                .catalog-list [data-table-col="description"] {
+                                    flex: 0 0 26%;
+                                }
+        
+                                .catalog-list [data-table-col="date"] {
+                                    flex: 0 0 12%;
+                                }
+        
+                                .catalog-list [data-table-col="investment_size"] {
+                                    flex: 0 0 12%;
+                                }
+        
+                                .catalog-list [data-table-col="round"] {
+                                    flex: 0 0 12%;
+                                }
+        
+                                .catalog-list [data-table-col="investor"] {
+                                    flex: 0 0 14%;
+                                }
+        
+                                .catalog-list [data-table-col="startup_stage"] {
+                                    flex: 0 0 14%;
+                                }
+        
+                                .catalog-list [data-table-col="market_niche"] {
+                                    flex: 0 0 14%;
+                                }
+        
+                                .catalog-list [data-table-col="technology"] {
+                                    flex: 0 0 14%;
+                                }
+        
+                                .catalog-list [data-table-col="typeinv"] {
+                                    flex: 0 0 14%;
+                                }
+        
+                                .catalog-list [data-table-col="customers"] {
+                                    flex: 0 0 14%;
+                                }
+        
+                                .catalog-list [data-table-col="siteofcompany"] {
+                                    flex: 0 0 16%;
+                                    word-break: break-word;
+                                }
+                            }
+        
+                            @media screen and (max-width: 1240px) {
+                                .catalog-list [data-table-col="title"] {
+                                    flex: 0 0 22%;
+                                }
+        
+                                .catalog-list [data-table-col="description"] {
+                                    flex: 0 0 24%;
+                                }
+        
+                                .catalog-list [data-table-col="date"] {
+                                    flex: 0 0 13%;
+                                }
+        
+                                .catalog-list [data-table-col="investment_size"] {
+                                    flex: 0 0 13%;
+                                }
+        
+                                .catalog-list [data-table-col="round"] {
+                                    flex: 0 0 13%;
+                                }
+        
+                                .catalog-list [data-table-col="investor"] {
+                                    flex: 0 0 15%;
+                                }
+        
+                                .catalog-list [data-table-col="startup_stage"] {
+                                    flex: 0 0 15%;
+                                }
+        
+                                .catalog-list [data-table-col="market_niche"] {
+                                    flex: 0 0 15%;
+                                }
+        
+                                .catalog-list [data-table-col="technology"] {
+                                    flex: 0 0 15%;
+                                }
+        
+                                .catalog-list [data-table-col="typeinv"] {
+                                    flex: 0 0 15%;
+                                }
+        
+                                .catalog-list [data-table-col="customers"] {
+                                    flex: 0 0 15%;
+                                }
+        
+                                .catalog-list [data-table-col="siteofcompany"] {
+                                    flex: 0 0 15%;
+                                }
+                            }
+                        </style>
+
+                    </div>
+                </div>
+
+
+            </main>
+
+            <div class="page__buffer"></div>
+
+        </div>
+
+        <footer class="page__footer container-fluid">
+            <div class="footer">
+                <div class="row footer-desc">
+                    <div class="logo-wrapper col-lg-2 col-md-4">
+                        <a href="#" target="_blank">
+                            <img src="static/img/content/deals/aim.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="menu-item col-lg-2 col-md-4">
+                        <a href="#" class="menu-item-href" target="_blank">
+                            <img src="static/img/content/deals/mik.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="menu-item col-lg-3 col-md-4">
+                        <a href="#" class="menu-item-href" target="_blank">
+                            <img src="static/img/content/deals/sg.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="menu-item footer-text offset-col-lg-1 col-lg-4 col-md-6">
+                        <p>Нашли опечатку? Выделите текст и&nbsp;нажмите <span class="text-white text-nowrap">CTRL + ENTER</span>
+                        </p>
+                        <p>Нашли ошибку, есть вопросы или хотите добавить информацию в&nbsp;дэшборд, напишите нам <a href="mailto:research@develop.mos.ru">research@develop.mos.ru</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-mobile d-lg-none d-md-none d-sm-block">
+                    <div class="footer-title">Полезные ссылки</div>
+                    <div class="footer-href">
+                        <a href="/">Венчурные инвестиции</a>
+                        <a href="/exits/">Выходы</a>
+                        <a href="/startups/">Таблица сделок</a>
+                        <a href="/investments/">Направления инвестиций</a>
+                        <a href="/startups/">ESG</a>
+                        <a href="/startups/">Аналитические исследования</a>
+                        <a href="/about/">О проекте</a>
+                    </div>
+                    <div class="footer-title">Контакты</div>
+                    <div class="footer-href">
+                        <a href="mailto:research@develop.mos.ru">research@develop.mos.ru</a>
+                    </div>
+                    <p>ГБУ «Агенство инноваций Москвы», 2022</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="static/js/separate-js/svg4everybody.min.js"></script>
+        <script>
+            svg4everybody();
+        </script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="static/js/main.min.js"></script>
+        <!-- START - Регистрация компонентов vue -->
+        <script type="text/template" id="cat-item_tpl">
+            <article>
+                <a :href="itemdata.link" class="catalog-item cat-item-deals" :title="itemdata.title">
+                    <div data-table-col="title" class="catalog-item__title" data-label="Компания">
+                        <div class="logo-wrapper">
+                            <img :src="itemdata.img" :alt="itemdata.title">
+                        </div>
+                        <span class="comp-title" v-html="itemdata.comptitle"></span>
+                    </div>
+                    <div data-table-col="description" v-html="itemdata.description" class="catalog-item__desc"
+                         data-label="Описание" v-if="this.$root.rows.description"></div>
+                    <div data-table-col="date" v-html="itemdata.year" class="catalog-item__year" data-label="Дата"
+                         v-if="this.$root.rows.date"></div>
+                    <div data-table-col="investment_size" v-html="'$ ' + [[numberWithSpaces(itemdata.volume)]]"
+                         data-label="Объем инвестиций" v-if="this.$root.rows.investment_size"></div>
+                    <div data-table-col="round" v-html="itemdata.stage" class="catalog-item__stage" data-label="Раунд"
+                         v-if="this.$root.rows.round"></div>
+                    <div data-table-col="investor" v-html="itemdata.investor" data-label="Инвестор"
+                         v-if="this.$root.rows.investor"></div>
+                    <div data-table-col="startup_stage" v-html="itemdata.stadia" data-label="Стадия"
+                         v-if="this.$root.rows.startup_stage"></div>
+                    <div data-table-col="market_niche" v-html="itemdata.market_niche" data-label="Рыночная ниша"
+                         v-if="this.$root.rows.market_niche"></div>
+                    <div data-table-col="technology" v-html="itemdata.technology" data-label="Технологии"
+                         v-if="this.$root.rows.technology"></div>
+                    <div data-table-col="typeinv" v-html="itemdata.typeinv" data-label="Тип инвестора"
+                         v-if="this.$root.rows.typeinv"></div>
+                    <div data-table-col="customers" v-html="itemdata.customers" data-label="Пользователи продукта"
+                         v-if="this.$root.rows.customers"></div>
+                    <div data-table-col="siteofcompany" v-html="itemdata.siteofcompany" data-label="Сайт компании"
+                         v-if="this.$root.rows.siteofcompany"></div>
+                </a>
+        
+        
+            </article>
+        </script>
+
+        <script type="text/javascript">
+            Vue.component('cat-item', {
+                template: '#cat-item_tpl',
+                delimiters: ['[[', ']]'],
+                props: {
+                    itemdata: Object,
+                },
+                data: function () {
+                    return {}
+                },
+        
+                methods: {
+                    numberWithSpaces: function (x) {
+                        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+                    }
+                }
+            });
+        </script>
+        <!-- END - Регистрация компонентов vue -->
+
+        <script>
+            let SC_catalog_data = {
+                rows: {
+                    company: 'true',
+                    description: 'true',
+                    date: 'true',
+                    investment_size: 'true',
+                    round: 'true',
+                    investor: 'true',
+                    startup_stage: '',
+                    market_niche: '',
+                    technology: '',
+                    typeinv: '',
+                    customers: '',
+                    siteofcompany: '',
+                    exitofcompany: ''
+                },
+                filter: {
+                    market: '',
+                    stage: '',
+                    size: '',
+                    age: '',
+                    gain: '',
+                    count: ''
+                },
+                sortParam: 'year',
+                sortArrow: 'down',
+                cat_items: [
+                    {
+                        img: 'https://portal.inno.msk.ru/img/crm/company/logo/a0/d2/48d62cb32fa2ebbe1298beb04301e60c2f6d1dc1442b3602a90ff2f635bf.png',
+                        comptitle: 'WROOM ',
+                        description: 'Мобильное приложение и веб-сервис, который агрегирует услуги по обслуживанию автомобилей в рейтинг автосервисов и дилерских центров, позволяет найти наиболее выгодное по цене, близкое по геолокации и качественное предложение для автомобиля с учетом модели и технических характеристик и записаться на ТО за минуту.',
+                        investor: 'ФРИИ</br>',
+                        typeinv: 'Акселераторы</br>',
+                        volume: '35217',
+                        stage: 'Pre-seed',
+                        year: "янв-2017",
+                        stadia: 'Посевная</br>',
+                        market_niche: 'Transport & Logistics</br>',
+                        technology: '',
+                        customers: 'B2C</br>',
+                        siteofcompany: 'н.д.',
+                        exitofcompany: '',
+                    },
+                    {
+                        img: 'https://portal.inno.msk.ru/img/crm/company/logo/44/cb/7e9a2674d795a4c2efa280cfee97dbaad4ea1bb115d3858e330c03ba0562.png',
+                        comptitle: 'ПРОГРЕССКАРД',
+                        description: 'Сервис по анализу и улучшению кредитной истории для людей, которые испытывают проблемы при получении кредитов. Система анализирует и выявляет недостатки кредитной истории, предлагает план по её улучшению. ',
+                        investor: 'ФРИИ</br>',
+                        typeinv: 'Акселераторы</br>',
+                        volume: '35217',
+                        stage: 'Pre-seed',
+                        year: "янв-2017",
+                        stadia: 'Посевная</br>',
+                        market_niche: 'FinTech</br>',
+                        technology: 'BigData</br>',
+                        customers: 'B2C</br>',
+                        siteofcompany: 'http://progresscard.ru/',
+                        exitofcompany: '',
+                    },
+                    {
+                        img: 'https://portal.inno.msk.ru/img/crm/company/logo/06/b5/8cc76900f0bef7b5f29f800b565e4963313195b77d1b89134683fc8de89a.png',
+                        comptitle: 'NULL REAL',
+                        description: 'Разработка AR / VR / MR решений (VR-аттракционы с возможностью перемещения человека по неограниченной локации без каких-либо внешних датчиков и камер, системы навигации с дополненной реальностью и др.)',
+                        investor: 'ФРИИ</br>',
+                        typeinv: 'Акселераторы</br>',
+                        volume: '35217',
+                        stage: 'Pre-seed',
+                        year: "янв-2017",
+                        stadia: 'Посевная</br>',
+                        market_niche: 'Entertainment</br>',
+                        technology: 'AR/VR</br>',
+                        customers: 'B2B</br>',
+                        siteofcompany: 'https://nullreal.com/',
+                        exitofcompany: '',
+                    },
+                    {
+                        img: 'https://portal.inno.msk.ru/img/crm/company/logo/24/bc/b7ed696aee1d6e1420db29a2b9861e87246464605dff83193df89e03f563.jpg',
+                        comptitle: 'Semantic Hub',
+                        description: 'Система оценки и отбора перспективных продуктов для фармкомпаний и венчурных фондов, инвестирующих в фармацевтические проекты (Scientific Due Diligence). Разработка основана на семантической платформе, анализирующей большие текстовые данные на различных языках.',
+                        investor: 'ФРИИ</br>',
+                        typeinv: 'Акселераторы</br>',
+                        volume: '35217',
+                        stage: 'Pre-seed',
+                        year: "янв-2017",
+                        stadia: 'Посевная</br>',
+                        market_niche: 'Healthcare</br>',
+                        technology: 'Искусственный интеллект и машинное обучение</br>BigData</br>',
+                        customers: 'B2B</br>',
+                        siteofcompany: 'https://www.semantic-hub.com/',
+                        exitofcompany: '',
+                    },
+                    {
+                        img: 'https://portal.inno.msk.ru/img/crm/company/logo/04/ad/1d482cb2f731e97bf04fc56c99163cc395867fff760cfc6af229d17358f7.png',
+                        comptitle: 'Мой город',
+                        description: 'Сеть городских мобильных информационных порталов для городов России от 30000 жителей, которые помогают владельцам городских СМИ (сообщества «ВКонтакте», печатные или веб-порталы) расширять аудиторию и увеличивать рекламную выручку. ',
+                        investor: 'ФРИИ</br>',
+                        typeinv: 'Акселераторы</br>',
+                        volume: '35217',
+                        stage: 'Pre-seed',
+                        year: "янв-2017",
+                        stadia: 'Ранний рост</br>',
+                        market_niche: 'Мedia & Communication</br>',
+                        technology: '',
+                        customers: 'B2B</br>',
+                        siteofcompany: 'https://cms.moygorod.mobi/about/index-about.html',
+                        exitofcompany: '',
+                    },
+                    {
+                        img: 'https://portal.inno.msk.ru/img/crm/company/logo/8e/62/e3a003931bb31f9eb146960f895757aba4b02733f243e2a2cd54aadf4422.png',
+                        comptitle: 'CARL',
+                        description: 'Приложение для заказа автомобиля на тест-драйв, который можно совершить в любой точке города по удобному маршруту, без посещения дилерских центров.Также в приложении можно совершить предоплату или полностью оплатить покупку автомобиля на условиях эквайринга. ',
+                        investor: 'Авенир</br>',
+                        typeinv: 'Частные фонды</br>',
+                        volume: '300000',
+                        stage: 'Seed',
+                        year: "янв-2017",
+                        stadia: 'Посевная</br>',
+                        market_niche: 'Consumer Goods & Services</br>',
+                        technology: '',
+                        customers: 'B2C</br>',
+                        siteofcompany: 'https://carl-drive.ru/',
+                        exitofcompany: '',
+                    },
+        
+                ]
+            };
+        </script>
+        <script>
+            $(function () {
+                new Vue({
+                    el: '#catalog-app',
+                    delimiters: ['[[', ']]'],
+        
+                    data: $.extend({
+                        // ajaxURL: '?r=site%2Ftabledeal',
+                        ajaxURL: 'deals_response.json',
+                        isLoading: true,
+        
+                    }, SC_catalog_data),
+        
+                    computed: {
+                        cat_items_sorted: function () {
+                            return this.cat_items;
+                        },
+                        filtersRow() {
+                            let vm = this
+        
+                            return Object.entries(this.filter).reduce((rowArray, filter, idx) => {
+                                // Определяем имя(ена) активного(ых) фильтра(ов) и возвращаем соответствующие объекты
+                                const filterName = filter[0]
+                                const filterVal = filter[1]
+        
+                                if (filterName == 'day-begin' || filterName == 'day-end' || filterName == 'year-begin' || filterName == 'year-end') {
+                                    if (rowArray.findIndex(o => o.name == 'date') == -1) {
+                                        let val = ''
+        
+                                        if (this.filter['day-begin'].length && this.filter['year-begin'].length) val += 'от ' + this.filter['day-begin'] + '/' + this.filter['year-begin']
+                                        if (this.filter['day-end'].length && this.filter['year-end'].length) val += ' до ' + this.filter['day-end'] + '/' + this.filter['year-end']
+        
+                                        if (val.length) rowArray.push({
+                                            name: 'date', val: val
+                                        })
+                                    }
+                                }
+                                else if (typeof filterVal == "string" && filterVal.length) {
+                                    rowArray.push({
+                                        name: filterName,
+                                        val: filterVal
+                                    })
+                                }
+                                else if (typeof filterVal == "object") {
+                                    if (filterVal.length) {
+                                        let filterEntries = filterVal.map((val) => {
+                                            return {name: filterName, val: val}
+                                        });
+                                        rowArray = rowArray.concat(filterEntries)
+                                    }
+                                }
+        
+                                return rowArray;
+                            }, [])
+                        },
+                    },
+        
+                    methods: {
+                        sort: function (param) {
+                            if (this.sortParam == param) {
+                                this.sortArrow = (this.sortArrow == 'down') ? 'up' : 'down';
+                            } else {
+                                this.sortArrow = 'up'
+                            }
+                            this.sortParam = param;
+                        },
+                        numberWithSpaces: function (x) {
+                            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+                        },
+        
+                        getAllUrlParams(url) {
+                            // извлекаем строку из URL или объекта window
+                            var queryString = url ? url.split('?')[1] : window.location.search.slice(1);
+                            // объект для хранения параметров
+                            var obj = {};
+                            // если есть строка запроса
+                            if (queryString) {
+                                // данные после знака # будут опущены
+                                queryString = queryString.split('#')[0];
+                                // разделяем параметры
+                                var arr = queryString.split('&');
+                                for (var i = 0; i < arr.length; i++) {
+                                    // разделяем параметр на ключ => значение
+                                    var a = arr[i].split('=');
+                                    // обработка данных вида: list[]=thing1&list[]=thing2
+                                    var paramNum = undefined;
+                                    var paramName = a[0].replace(/\[\d*\]/, function (v) {
+                                        paramNum = v.slice(1, -1);
+                                        return '';
+                                    });
+                                    // передача значения параметра ('true' если значение не задано)
+                                    var paramValue = typeof(a[1]) === 'undefined' ? true : a[1];
+                                    // преобразование регистра
+                                    paramName = paramName.toLowerCase();
+                                    paramValue = paramValue.toLowerCase();
+                                    // если ключ параметра уже задан
+                                    if (obj[paramName]) {
+                                        // преобразуем текущее значение в массив
+                                        if (typeof obj[paramName] === 'string') {
+                                            obj[paramName] = [obj[paramName]];
+                                        }
+                                        // если не задан индекс...
+                                        if (typeof paramNum === 'undefined') {
+                                            // помещаем значение в конец массива
+                                            obj[paramName].push(paramValue);
+                                        }
+                                        // если индекс задан...
+                                        else {
+                                            // размещаем элемент по заданному индексу
+                                            obj[paramName][paramNum] = paramValue;
+                                        }
+                                    }
+                                    // если параметр не задан, делаем это вручную
+                                    else {
+                                        obj[paramName] = paramValue;
+                                    }
+                                }
+                            }
+                            return obj;
+                        },
+        
+                        removeFilter(filterObj) {
+                            // fi - filter item
+                            let fi = this.filter[filterObj.name]
+                            let $select
+        
+                            if (filterObj.name == 'date') {
+                                $select = $('.selectpicker[name *= "day"], .selectpicker[name *= "year"]')
+        
+                                this.$set(this.filter, 'day-begin', '')
+                                this.$set(this.filter, 'year-begin', '')
+                                this.$set(this.filter, 'day-end', '')
+                                this.$set(this.filter, 'year-end', '')
+        
+                                $select.selectpicker('val', '').closest('.date-btn').removeClass('active')
+                            }
+                            else {
+                                $select = $('.selectpicker[name="' + filterObj.name + '"]')
+        
+                                if (typeof fi == 'string') {
+                                    this.filter[filterObj.name] = ''
+                                    $select.selectpicker('val', '')
+                                }
+                                else if (typeof fi == 'object') {
+                                    let idx = fi.findIndex(el => el === filterObj.val);
+                                    if (idx >= 0) fi.splice(idx, 1)
+                                    $select.selectpicker('val', fi)
+                                }
+                            }
+        
+                            this.doFilterItems($select[0])
+                        },
+        
+                        doFilterItems: function (event) {
+        
+                            let self = this;
+                            let $select
+        
+                            if (event.target) $select = $(event.target)
+                            else $select = $(event)
+        
+                            var arUrl = window.location.search.split('&');
+                            arUrl[0] = arUrl[0].slice(1);
+                            var arr = [];
+                            var arrNew = [];
+        
+                            if (!arUrl[0].length) arUrl.shift()
+        
+                            $.each(arUrl, function (i, elem) {
+                                arr[i] = elem.split('=');
+                                if (arr[i][0] != $select[0].name && arr[i][0] != 'page' && arr[i][1].length) {
+                                    arrNew.push(arr[i][0] + '=' + arr[i][1]);
+                                }
+                            });
+        
+                            if ($select.val()) arrNew.push($select.attr('name') + '=' + encodeURIComponent($select.val()));
+                            arrNew.push('page=' + ($select[0].name == 'page' ? $select.data('page') : '1'))
+        
+                            var newUrl = arrNew.join('&');
+                            newUrl = window.location.pathname + '?' + newUrl;
+                            history.pushState('', '', newUrl);
+        
+                            /* START - Управление списком фильтров */
+                            if ($select.val()) {
+                                if ($select.hasClass('select-day') || $select.hasClass('select-year')) {
+                                    $select.closest(".date-btn").addClass('active')
+                                }
+                                else {
+                                    $select.addClass('active').parent().addClass('active')
+                                }
+                            }
+                            else {
+                                $select.removeClass('active').parent().removeClass('active')
+                            }
+                            if (event.target) {
+                                self.$set(self.filter, $select.attr('name'), $select.val())
+                            }
+                            /* END - Управление списком фильтров */
+        
+                            let $filtersWrapper = $(".deals-button-row")
+        
+                            let $yearBeginSelect = $filtersWrapper.find('.selectpicker.year-begin')
+                            let $dayBeginSelect = $filtersWrapper.find('.selectpicker.day-begin')
+                            let $yearEndSelect = $filtersWrapper.find('.selectpicker.year-end')
+                            let $dayEndSelect = $filtersWrapper.find('.selectpicker.day-end')
+        
+                            var begin = '';
+                            var end = '';
+        
+                            if ($yearBeginSelect.val() != '' && $dayBeginSelect.val() != '') {
+                                begin = $yearBeginSelect.val() + '-' + $dayBeginSelect.val();
+                            }
+                            if ($yearEndSelect.val() != '' && $dayEndSelect.val() != '') {
+                                end = $yearEndSelect.val() + '-' + $dayEndSelect.val();
+                            }
+        
+                            self.isLoading = true
+                            $.ajax({
+                                // Метод отправки данных (тип запроса)
+                                type: 'post',
+                                // URL для отправки запроса
+                                url: self.ajaxURL,
+                                // Данные формы
+                                data: {
+                                    '_csrf': $('meta[name="csrf-token"]').attr('content'),
+                                    'AjaxTest': {
+                                        'page': $select[0].name == 'page' ? $select.data('page') : '1',
+                                        'begin': begin,
+                                        'end': end,
+                                        'exits': $('.deal-btn.small-letters.active').attr('name'),
+                                        'rounds': encodeURIComponent($('.selectpicker.rounds', $filtersWrapper).val().join()),
+                                        'stages': encodeURIComponent($('.selectpicker.stages', $filtersWrapper).val().join()),
+                                        'spheres': encodeURIComponent($('.selectpicker.spheres', $filtersWrapper).val().join()),
+                                        'technologies': encodeURIComponent($('.selectpicker.technologies', $filtersWrapper).val().join()),
+                                        'funds': encodeURIComponent($('.selectpicker.funds', $filtersWrapper).val().join()),
+                                        'users': encodeURIComponent($('.selectpicker.users', $filtersWrapper).val().join())
+                                    }
+                                }
+                            })
+                                .done(function (data) {
+                                    if (data.error == null) {
+                                        // Если ответ сервера успешно получен
+                                        self.cat_items = data.data.startups;
+                                        $('.cat-pagination').html(data.data.pages);
+                                    }
+                                })
+                                .always(function () {
+                                    self.isLoading = false
+                                })
+                        }
+                    },
+        
+                    created: function () {
+                        let params = this.getAllUrlParams();
+        
+                        var i, links = document.querySelectorAll('.pages a');
+                        var prev, prevlinks = document.querySelectorAll('.prev a');
+                        var next, nextlinks = document.querySelectorAll('.next a');
+                        var string = '';
+        
+                        if (typeof params.order != 'undefined') {
+                            string += '&order=' + params.order;
+                        }
+                        if (typeof params.exits != 'undefined') {
+                            string += '&exits=' + params.exits;
+                        }
+                        for (i = 0; i < links.length; i++) {
+                            links[i].href += string;
+                        }
+                        for (prev = 0; prev < prevlinks.length; prev++) {
+                            prevlinks[prev].href += string;
+                        }
+                        for (next = 0; next < nextlinks.length; next++) {
+                            nextlinks[next].href += string;
+                        }
+                        var stringo = '';
+                        var o, oinks = document.querySelectorAll('.buttons-order a');
+        
+                        if (typeof params.exits != 'undefined') {
+                            stringo = '&exits=' + params.exits;
+                            if (params.exits == 1) {
+                                var rounds = '';
+                            } else {
+                                var rounds = encodeURIComponent($('select.rounds').val().join());
+                            }
+                        } else {
+                            var rounds = encodeURIComponent($('select.rounds').val().join());
+                        }
+                        for (o = 0; o < oinks.length; o++) {
+                            oinks[o].href += stringo;
+                        }
+                        var stringexits = '';
+                        var exits, exitsinks = document.querySelectorAll('.buttons-exits a');
+                        if (typeof params.order != 'undefined') {
+                            stringexits = '&order=' + params.order;
+                        }
+                        for (exits = 0; exits < exitsinks.length; exits++) {
+                            exitsinks[exits].href += stringexits;
+                        }
+                    },
+        
+                    mounted: function () {
+                        let self = this;
+                        let $filtersWrapper = $(".deals-button-row")
+        
+                        var oldurl = window.location.search;
+                        var searchParams = new URLSearchParams(oldurl);
+                        let begin = '';
+                        let end = '';
+                        let page = 1
+        
+                        for (let [key, val] of searchParams.entries()) {
+                            if (val && key !== 'page') {
+                                let $select = $('.selectpicker[name="' + key + '"]')
+        
+                                if ($select.prop('multiple')) {
+                                    this.$set(this.filter, key, val.split(','))
+                                    $select.selectpicker('val', val.split(','));
+                                }
+                                else {
+                                    this.$set(this.filter, key, val)
+                                    $select.selectpicker('val', val);
+                                }
+        
+                                if ($select.hasClass('select-day') || $select.hasClass('select-year')) {
+                                    $select.closest(".date-btn").addClass('active')
+                                }
+                                else {
+                                    $select.addClass('active').parent().addClass('active')
+                                }
+                            }
+                            else if (key == 'page') page = val
+                        }
+        
+                        let $yearBeginSelect = $filtersWrapper.find('.selectpicker.year-begin')
+                        let $dayBeginSelect = $filtersWrapper.find('.selectpicker.day-begin')
+                        let $yearEndSelect = $filtersWrapper.find('.selectpicker.year-end')
+                        let $dayEndSelect = $filtersWrapper.find('.selectpicker.day-end')
+        
+                        let dayBegin = searchParams.get("day-begin") || $dayBeginSelect.val()
+                        let yearBegin = searchParams.get("year-begin") || $yearBeginSelect.val()
+                        let dayEnd = searchParams.get("day-end") || $dayEndSelect.val()
+                        let yearEnd = searchParams.get("year-end") || $yearEndSelect.val()
+        
+                        this.$set(this.filter, 'day-begin', dayBegin)
+                        this.$set(this.filter, 'year-begin', yearBegin)
+                        this.$set(this.filter, 'day-end', dayEnd)
+                        this.$set(this.filter, 'year-end', yearEnd)
+        
+                        $.ajax({
+                            // Метод отправки данных (тип запроса)
+                            type: 'post',
+                            // URL для отправки запроса
+                            url: self.ajaxURL,
+                            // Данные формы
+                            data: {
+                                '_csrf': $('meta[name="csrf-token"]').attr('content'),
+                                'AjaxTest': {
+                                    'page': page,
+                                    'begin': yearBegin + '-' + dayBegin,
+                                    'end': yearEnd + '-' + dayEnd,
+                                    'exits': $('.deal-btn.small-letters.active').attr('name'),
+                                    'rounds': encodeURIComponent($('.selectpicker.rounds', $filtersWrapper).val().join()),
+                                    'stages': encodeURIComponent($('.selectpicker.stages', $filtersWrapper).val().join()),
+                                    'spheres': encodeURIComponent($('.selectpicker.spheres', $filtersWrapper).val().join()),
+                                    'technologies': encodeURIComponent($('.selectpicker.technologies', $filtersWrapper).val().join()),
+                                    'funds': encodeURIComponent($('.selectpicker.funds', $filtersWrapper).val().join()),
+                                    'users': encodeURIComponent($('.selectpicker.users', $filtersWrapper).val().join())
+                                }
+                            }
+                        })
+                            .done(function (data) {
+                                if (data.error == null) {
+                                    // Если ответ сервера успешно получен
+                                    self.cat_items = data.data.startups;
+                                    $('.cat-pagination').html(data.data.pages);
+                                }
+                            })
+                            .always(function () {
+                                self.isLoading = false
+                            })
+        
+                        $(".deals-button-row .selectpicker").on('change', function (e) {
+                            self.doFilterItems(e)
+                        });
+                        $('#catalog-app').on('click', ".page-button", function (e) {
+                            self.doFilterItems(e)
+                        });
+        
+                        $('.item-column input').on("click", function () {
+                            var chk = $('.item-column').find('input[type=checkbox]:checked').length;
+                            if (chk > 5) {
+                                $("#doublescroll").addClass("more-columns");
+                                $(".catalog-title").addClass("add-more-columns");
+                                $(".catalog-item").addClass("add-more-columns");
+                            } else {
+                                $("#doublescroll").removeClass("more-columns");
+                                $(".catalog-title").removeClass("add-more-columns");
+                                $(".catalog-item").removeClass("add-more-columns");
+                            }
+                        });
+        
+                        $('.filter-btn').on('click', function () {
+                            $('.add-columns').toggleClass('active');
+                        })
+                    }
+                });
+            });
+            var sortYearDown = function (d1, d2) {
+                return (d1.year.toLowerCase() > d2.year.toLowerCase()) ? 1 : -1;
+            };
+            var sortYearUp = function (d1, d2) {
+                return (d1.year.toLowerCase() < d2.year.toLowerCase()) ? 1 : -1;
+            };
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    </body>
+
+</html>
